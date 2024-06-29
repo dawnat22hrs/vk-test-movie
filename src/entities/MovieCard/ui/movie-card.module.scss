@@ -1,0 +1,52 @@
+.card {
+    width: 200px;
+    height: 370px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    position: relative;
+
+    .btnBlock {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: none
+    }
+
+    .poster {
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .noposter {
+        width: 200px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoContainer {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        .nameBlock {
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical; 
+            overflow: hidden; 
+
+            .name {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.card:hover .btnBlock {
+    display: block;
+}

@@ -1,0 +1,34 @@
+.filters {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .wrapperItem {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .mark {
+            font-weight: 500;
+        }
+
+        .filtersItem {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+            .value {
+                display: flex;
+                gap: 3px;
+            }
+        }
+    }
+}
